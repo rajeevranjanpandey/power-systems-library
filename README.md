@@ -21,6 +21,46 @@ The **Power Systems Library** is a Python-based framework for performing various
 
 ## **Library Structure**
 The library follows a modular design to ensure ease of development and future scalability. Below is the folder structure:
-power_systems/ ├── components/ # Core definitions for power system components │ ├── bus.py # Bus system models │ ├── generator.py # Generator models │ ├── load.py # Load models │ ├── branch.py # Transmission line models │ ├── algorithms/ # Power system analysis algorithms │ ├── power_flow.py # Power flow methods (Newton-Raphson, etc.) │ ├── fault_analysis.py # Fault studies │ ├── stability.py # Stability calculations │ ├── data/ # IEEE test system data │ ├── ieee_14.json # IEEE 14-bus system data │ ├── ieee_30.json # IEEE 30-bus system data │ ├── ieee_57.json # IEEE 57-bus system data │ ├── ieee_118.json # IEEE 118-bus system data │ ├── utils/ # Utility functions for calculations and operations │ ├── matrix_utils.py # Matrix operations (e.g., admittance matrix) │ ├── helpers.py # General helper functions │ ├── tests/ # Unit tests for validation │ ├── test_power_flow.py # Tests for power flow analysis │ ├── test_faults.py # Tests for fault analysis │ ├── examples/ # Demonstrations of library usage │ ├── run_power_flow.py # Example: Run power flow analysis │ ├── analyze_fault.py # Example: Perform fault analysis │ ├── README.md # Project documentation ├── setup.py # Installation script └── LICENSE # License information
+
+---
+
+## **Components Overview**
+
+### `components/`
+- **`bus.py`**: Defines the structure and properties of buses in the power system.
+- **`generator.py`**: Implements generator models, including parameters like power output and voltage setpoints.
+- **`load.py`**: Models load characteristics such as active and reactive power demand.
+- **`branch.py`**: Represents transmission lines and branch properties like impedance and admittance.
+
+### `algorithms/`
+- **`power_flow.py`**: Contains power flow calculation methods (e.g., Newton-Raphson).
+- **`fault_analysis.py`**: Implements algorithms for fault detection and analysis.
+- **`stability.py`**: Tools for assessing the stability of the power system.
+
+### `data/`
+- Includes predefined IEEE test system data for various standard bus configurations:
+  - `ieee_14.json`: IEEE 14-bus system.
+  - `ieee_30.json`: IEEE 30-bus system.
+  - `ieee_57.json`: IEEE 57-bus system.
+  - `ieee_118.json`: IEEE 118-bus system.
+
+### `utils/`
+- **`matrix_utils.py`**: Matrix operations such as forming the admittance matrix.
+- **`helpers.py`**: General utility functions for calculations.
+
+### `tests/`
+- Unit tests for validating the library functionality:
+  - `test_power_flow.py`: Tests for power flow methods.
+  - `test_faults.py`: Tests for fault analysis.
+
+### `examples/`
+- Demonstrative scripts for using the library:
+  - `run_power_flow.py`: Example script for power flow analysis.
+  - `analyze_fault.py`: Example script for fault detection.
+
+---
+
+## **License**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
