@@ -22,7 +22,7 @@ The **Power Systems Library** is a Python-based framework for performing various
 ## **Library Structure**
 The library follows a modular design to ensure ease of development and future scalability. Below is the folder structure:
 
-<head>
+```bash
 
 power_systems/
 ├── components/          # Core definitions for power system components
@@ -53,7 +53,7 @@ power_systems/
 └── LICENSE              # License information
 
 
-<head>
+```
 
 ## **License**
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
